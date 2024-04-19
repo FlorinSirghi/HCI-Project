@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>ModernSoft Documentation</title>
+    <link rel="stylesheet" href="doc.css" />
+  </head>
+  <body prefix="schema: http://schema.org">
+    <header>
+      <h1>Documentation</h1>
+    </header>
+
+    <div role="contentinfo">
+      <ol role="directory">
+        <li>
+          <a href="#abstract"> <span>1. </span>Abstract</a>
+        </li>
+        <li>
+          <a href="#introduction"> <span>2. </span>Introduction</a>
+          <ol role="directory">
+            <li>
+              <a href="#purpose"> <span>2.1 </span>Purpose</a>
+            </li>
+            <li>
+              <a href="#document-convetions">
+                <span>2.2 </span>Document conventions</a
+              >
+            </li>
+            <li>
+              <a href="#intended-audience">
+                <span>2.3 </span>Intended Audience and Reading Suggestions</a
+              >
+            </li>
+            <li>
+              <a href="#product-scope"> <span>2.4 </span>Product Scope</a>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="#overall-description">
+            <span>3. </span>Overall Description</a
+          >
+          <ol role="directory">
+            <li>
+              <a href="#product-perspective">
+                <span>3.1 </span>Product Perspective</a
+              >
+            </li>
+            <li>
+              <a href="#product-functions">
+                <span>3.2 </span>Product Functions</a
+              >
+            </li>
+            <li>
+              <a href="#operating-environment">
+                <span>3.3 </span>Operating Environment</a
+              >
+            </li>
+            <li>
+              <a href="#assumptions">
+                <span>3.4 </span>Assumptions</a
+              >
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="#external-interface-requirements">
+            <span>4. </span>Interface</a
+          >
+          <ol role="directory">
+            <li>
+              <a href="#user-interfaces"> <span>4.1 </span>User Interfaces</a>
+            </li>
+            <li>
+              <a href="#hardware-interfaces">
+                <span>4.2 </span>Hardware Interfaces</a
+              >
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="#system-features"> <span>5. </span>System features</a>
+          <ol role="directory">
+            <li>
+              <a href="#searching">
+                <span>5.1 </span>Searching for TV Shows and Movies</a
+              >
+            </li>
+            <li>
+              <a href="#filtering">
+                <span>5.2 </span>Filtering and Sorting TV Shows and Movies by a
+                diversity of criteria</a
+              >
+            </li>
+            <li>
+              <a href="#account-making"> <span>5.3 </span>Making an account</a>
+            </li>
+            <li>
+              <a href="#viewing-stats">
+                <span>5.4 </span>Viewing various statistics</a
+              >
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="#references"> <span>6. </span>References</a>
+        </li>
+      </ol>
+      <dl>
+        <dt>Authors</dt>
+        <dd>
+          Anechitoaiei Codrin-Mihai, Mamaliga Alin, Sîrghi Constantin-Florin,
+          Group 3A1
+        </dd>
+      </dl>
+    </div>
+    <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
+      <h2>1. Abstract</h2>
+      <p>
+        This document presents the decisions and patterns of our UI design
+        of the AiCo project (Airsoft Companion) which is an web (smartphone and desktop), smart watch and AR app representing a companion
+        for Airsoft and is aimed as a documentation for the various functions of the app.
+      </p>
+    </section>
+
+    <section id="introduction" role="doc-introduction">
+      <h2>2. Introduction</h2>
+      <section id="purpose" role="doc-introduction">
+        <h3>2.1 Purpose</h3>
+        <p>
+          ModernSoft is an web app that aims to help users to browse, search, and
+          discover new content from popular streaming platforms such as Netflix
+          or Disney in a more personalized and informed way, made by team
+          ModernSoft. The project's scope is to deepen our knowledge of UI/UX design and its prerequisites like conducting
+          research tacatics, creating personas and creating storyboards, user flows and sketches and also to fulfill the
+          requirement of the Human-Computer Interaction class.
+        </p>
+      </section>
+      <section id="document-convetions" role="doc-introduction">
+        <h3>2.2 Document conventions</h3>
+        <p>
+          This document follows the Scholarly HTML format, which is rich
+          document format built entirely on open standards that enables the
+          interoperable exchange of scholarly articles.
+        </p>
+      </section>
+      <section id="intended-audience" role="doc-introduction">
+        <h3>2.3 Intended Audience and Reading Suggestions</h3>
+        <p>
+          This document is made as a requirement for the first part of our
+          project for the Human-Computer Interaction course and is intended for the
+          evaluator teacher to help them navigate our app easier and to get a
+          better understanding of the overall architecture of the app.
+        </p>
+      </section>
+      <section id="product-scope" role="doc-introduction">
+        <h3>2.4 Product Scope</h3>
+        <p>
+          This project is made for the Human-Computer Interaction course taught at the
+          Faculty of Computer Science, University A.I.Cuza in Iasi, Romania.
+        </p>
+      </section>
+    </section>
+
+    <section id="overall-description">
+      <h2>3. Overall Description</h2>
+      <section id="product-perspective" role="doc-introduction">
+        <h3>3.1 Product Perspective</h3>
+        <p>
+          The product represents our design of a web (smartphone, desktop), smart watch, AR app for the AiCo(Airsoft Companion) project which represents
+          a companion for the game Airsoft the design is focused on the ease of use as Airsoft is a dynamic game 
+        </p>
+      </section>
+      <section id="product-functions" role="doc-introduction">
+        <h3>3.2 Product Functions</h3>
+        <p>The main functions of the product are :</p>
+        <ul>
+          <li>
+            the ability to manage (create, join) a lobby to play Airsoft
+          </li>
+          <li>
+            the ability to find people to play Airsoft with
+          </li>
+          <li>
+            the ability to make use of the various in-game functions of the app such as : the map, the radar in order to win the
+            game
+          </li>
+          <li>the ability to report users for bad behaviour prior, during and after the game</li>
+          <li>the ability to check various statistics about games and other players</li>
+        </ul>
+      </section>
+      <section id="operating-environment" role="doc-introduction">
+        <h3>3.3 Operating Environment</h3>
+        <p>
+          The implementation of our design project is supposed to run on one side as a web app in the browser, this part of the
+          app will include functionalities like finding people to play with or checking statistics, and on the other side as a app
+          for smart watch and an AR headset which will be used mostly during the game.
+        </p>
+      </section>
+      <section id="assumptions-dependencies" role="doc-introduction">
+        <h3>3.4 Assumptions</h3>
+        <p>
+          The design is made under the asumption that any person, no matter their age or level of technology should be able to use
+          the app easily and have fun while playing the game.
+        </p>
+      </section>
+    </section>
+
+    <section id="external-interface-requirements">
+      <h2>4. Interface</h2>
+      <section id="user-interfaces" role="doc-introduction">
+        <h3>4.1 User Interfaces</h3>
+        <p>
+          The app for smart watch contains multiple screens :
+          <ul>
+            <li>Create a Lobby : represented by a form with fields for the lobby name, game mode, match duration and number of players in each team. </li>
+            <li>Join a Lobby : a simple form with only one field : the lobby password</li>
+            <li>Settings : to set/modify things like font-size, language, colors</li>
+            <li>Menu : a main page to jump around the various screens</li>
+            <li>Map : a map of the playground, contains red dot icons if the player spots and enemy and also green dot icons which show allies positions </li>
+            <li>Stats : a list of information based on previous matches like : number of game wins, number of wins, win percentage</li>
+          </ul>
+        </p>
+        <p>
+          The web app also contains various pages, besides those that are also present in the app for smart watch :
+          <ul>
+            <li>Find people to play with : a list of players that are close to you</li>
+            <li>Login</li>
+            <li>Create an account</li>
+            <li>Chat</li>
+          </ul>
+        </p>
+        <p>
+          The layout for the AR app contains various information about the game and player state such as : health left, ammo,
+          time-left, score, players left in each team - shown using human-like icons.
+        </p>
+      </section>
+      <section id="hardware-interfaces" role="doc-introduction">
+        <h3>4.2 Hardware Interfaces</h3>
+        <p>
+          The web app is made for a desktop browser, but can also be accessed from a smart phone using the browser.
+        </p>
+      </section>
+    </section>
+
+    <section id="system-features">
+      <h2>5. System features</h2>
+      <section id="searching" role="doc-introduction">
+        <h3>5.1 Managing a lobby </h3>
+        <p>
+          Our app provides the ability for the user to create or join a lobby to play Airsoft. In a lobby the players can set
+          different settings such as : the game type, the number of players in each team, the duration of the match and the score
+          required to win the game.
+        </p>
+      </section>
+      <section id="filtering" role="doc-introduction">
+        <h3>
+          5.2 Finding people to play with
+        </h3>
+        <p>
+          Another functionality that our app provides is the ability to find other people interested in playing airsoft. This can
+          be done using the web app.
+        </p>
+      </section>
+      <section id="account-making" role="doc-introduction">
+        <h3>5.3 Use various in-game features in order to win</h3>
+        <p>
+          The application also provides in-game functionalities like a map for players to be able to find their way around the
+          playing zone, a radar for situations when they are not 100% sure they have seen someone and other information such as
+          the ammo left in their guns or information about the game such as rounds left, allies alive, enemies killed, etc.
+        </p>
+      </section>
+      <section id="viewing-stats" role="doc-introduction">
+        <h3>5.4 Reporting users for bad behaviour prior, during and after the game</h3>
+        <p>
+          Users can also report other players for bad behaviour before, during and after the game, these reports show up in the
+          admin panel to be processed and verified, leaving it up to the admin to decide if the report is valid and apply
+          penalties.
+        </p>
+      </section>
+      <section id="viewing-stats" role="doc-introduction">
+        <h3>5.5 Check various statistics about games and other players</h3>
+        <p>
+          By using our app, users can also see various statistics regarding the
+          the games they've played and the teammates and enemies they played with. They can also see statistics about themselves
+          like the number of games they won or the number of kills they got.
+        </p>
+      </section>
+    </section>
+
+    <section id="references">
+      <h2>6. References</h2>
+      <p>For our deliverables we used the following websites/resources :</p>
+      <ul>
+        <li>
+          The HCI Course Website :
+          <a
+            href="http://pxdotpt.com/hci2024"
+            >http://pxdotpt.com/hci2024</a
+          >
+        </li>
+        <li>
+          UI-Patterns :
+          <a
+            href="https://ui-patterns.com/patterns"
+          >
+          https://ui-patterns.com/patterns</a
+          >
+        </li>
+        <li>
+          Design-pattern-guidelines :
+          <a
+            href="https://www.nngroup.com/articles/design-pattern-guidelines/"
+            >https://www.nngroup.com/articles/design-pattern-guidelines/</a
+          >
+        </li>
+        <li>
+          Story board that :
+          <a href="https://www.storyboardthat.com/"
+            >https://www.storyboardthat.com/</a
+          >
+        </li>
+        <li>
+          Persona template :
+          <a href="https://static1.squarespace.com/static/520b8498e4b021ed6a2b2c08/t/660bb8135f6f8611200a1128/1712044051497/Stefan+Negru+-+Personas+Template.pdf"
+            >https://static1.squarespace.com/static/520b8498e4b021ed6a2b2c08/t/660bb8135f6f8611200a1128/1712044051497/Stefan+Negru+-+Personas+Template.pdf</a
+          >
+        </li>
+        <li>
+          W3Schools website :
+          <a href="https://www.w3schools.com/">https://www.w3schools.com/</a>
+        </li>
+        <li>
+          Scholarly HTML :
+          <a href="https://w3c.github.io/scholarly-html/"
+            >https://w3c.github.io/scholarly-html/</a
+          >
+        </li>
+        <li>
+          IEEE-Template Software Requirements Specification :
+          <a href="https://github.com/rick4470/IEEE-SRS-Tempate#readme"
+            >https://github.com/rick4470/IEEE-SRS-Tempate#readme</a
+          >
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
